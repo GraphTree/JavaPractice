@@ -1,13 +1,13 @@
-public class Main {
+public class Main
+{
     public static void main(String[] args) {
-        FootballPlayer joe = new FootballPlayer("joe");
-        BaseballPlayer pat = new BaseballPlayer("pat");
+        Account timsAccount = new Account("Tim");
+        timsAccount.deposit(1000);
+        timsAccount.withdraw(500);;
+        timsAccount.withdraw(-200);;
+        timsAccount.deposit(-20);
+        timsAccount.calculateBalance();
 
-        Team herickTeam = new Team("herickTeam");
-        herickTeam.addPlayer(joe);
-        herickTeam.addPlayer(pat);
-
-        System.out.println(herickTeam.numPlayers());
-
+        System.out.println(timsAccount.getBalance());
     }
 }
