@@ -1,8 +1,7 @@
 public class Main
 {
     public static void main(String[] args) {
-        FinalVariableTest one = new FinalVariableTest("one");
-        FinalVariableTest two = new FinalVariableTest("two");
-
+        Theatre tehatre = new Theatre("Olympian", 9, 12);
+        tehatre.getSeats();
     }
 }
